@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: var(--color-slate-200, #e2e8f0);
+  }
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Clean minimal scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.datatable-cell [class*='max-w-'] {
+  max-width: 100% !important;
+}
+
+[data-table-density='compact'] .datatable-cell {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+html.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html.dark .bg-white { background-color: #111827 !important; }
+html.dark .bg-slate-50, html.dark .bg-slate-50\/50, html.dark .bg-slate-50\/70, html.dark .bg-slate-50\/80 { background-color: #1e293b !important; }
+html.dark .text-slate-900, html.dark .text-slate-800 { color: #f1f5f9 !important; }
+html.dark .text-slate-700, html.dark .text-slate-600 { color: #cbd5e1 !important; }
+html.dark .text-slate-500, html.dark .text-slate-400 { color: #94a3b8 !important; }
+html.dark .border-slate-200, html.dark .border-slate-200\/90, html.dark .border-slate-100 { border-color: #334155 !important; }
+html.dark input, html.dark select, html.dark textarea { background-color: #1e293b !important; color: #f1f5f9 !important; border-color: #475569 !important; }
+html.dark input::placeholder, html.dark textarea::placeholder { color: #94a3b8; }
+html.dark .hover\:bg-slate-50:hover { background-color: #1e293b !important; }

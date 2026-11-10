@@ -1,0 +1,6 @@
+{
+  "name": "ISSD B2B CRM",
+  "description": "ISSD Akıllı Ulaşım Sistemleri kurumsal B2B Müşteri İlişkileri Yönetimi (CRM) platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
